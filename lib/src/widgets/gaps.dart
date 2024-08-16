@@ -1,0 +1,26 @@
+import 'package:short_extensions/short_extensions.dart';
+
+Widget get gap4 => const SizedBox(height: 4);
+Widget get gap5 => const SizedBox(height: 5);
+Widget get gap8 => const SizedBox(height: 8);
+Widget get gap10 => const SizedBox(height: 10);
+Widget get gap15 => const SizedBox(height: 15);
+Widget get gap20 => const SizedBox(height: 20);
+Widget get gap30 => const SizedBox(height: 30);
+Widget get gap40 => const SizedBox(height: 40);
+Widget get gap50 => const SizedBox(height: 50);
+Widget get gap60 => const SizedBox(height: 60);
+Widget get gap70 => const SizedBox(height: 70);
+Widget get gap80 => const SizedBox(height: 80);
+Widget get gap90 => const SizedBox(height: 90);
+Widget get gap100 => const SizedBox(height: 100);
+Widget get gap110 => const SizedBox(height: 110);
+Widget get gap120 => const SizedBox(height: 120);
+Widget get gap130 => const SizedBox(height: 130);
+Widget get gap140 => const SizedBox(height: 140);
+Widget get gap150 => const SizedBox(height: 150);
+Widget get gap160 => const SizedBox(height: 160);
+Widget get gap170 => const SizedBox(height: 170);
+Widget get gap180 => const SizedBox(height: 180);
+Widget get gap190 => const SizedBox(height: 190);
+Widget get gap200 => const SizedBox(height: 200);
