@@ -41,6 +41,8 @@ class TextWidget extends StatelessWidget {
       this.fontweight = FontWeight.normal,
       this.font,
       this.isUnderlined,
+          this.overflow = TextOverflow.visible,
+
       this.color = Colors.black,
       this.align = TextAlign.center,
       this.fontStyle = FontStyle.normal,
@@ -53,7 +55,9 @@ class TextWidget extends StatelessWidget {
       this.fontsize,
       this.fontweight = FontWeight.normal,
       this.font,
-      this.isUnderlined,
+      this.isUnderlined,          this.overflow = TextOverflow.visible,
+
+
       this.color = Colors.blue,
       this.useGoogleFont = true,
       this.align = TextAlign.center,
@@ -66,7 +70,9 @@ class TextWidget extends StatelessWidget {
       this.useGoogleFont = true,
       this.fontsize,
       this.fontweight = FontWeight.normal,
-      this.font,
+      this.font,           this.overflow = TextOverflow.visible,
+
+
       this.isUnderlined,
       this.color = Colors.white,
       this.fontStyle = FontStyle.normal,
