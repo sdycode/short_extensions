@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
-Future goToScreen(BuildContext ctx, Widget destinationPage) async {
+
+Future goToScreen(BuildContext context, Widget destinationPage) async {
   // Original function name: navigateTo
   return await Navigator.push(
-    ctx,
+    context,
     MaterialPageRoute(
-      builder: (ctx) => destinationPage,
+      builder: (context) => destinationPage,
     ),
   );
 }
 
-Future<bool?> exitOrAttemptExit(BuildContext ctx,
+Future<bool?> exitOrAttemptExit(BuildContext context,
     {bool enforceExit = true, bool? returnValue}) async {
   // Original function name: navigatePopContext
   if (enforceExit) {
-    Navigator.pop<bool?>(ctx, returnValue);
+    Navigator.pop<bool?>(context, returnValue);
     return returnValue;
   } else {
-    return await Navigator.maybePop(ctx, returnValue);
+    return await Navigator.maybePop(context, returnValue);
   }
 }

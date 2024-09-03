@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 
-Future<DateTime?> displayAndSelectDate(BuildContext ctx, {
+Future<DateTime?> displayAndSelectDate(
+  BuildContext context, {
   // Original function name: showAndPickDatePickerDialog
   DateTime? startDate,
   DateTime? minDate,
 }) async {
   return showDatePicker(
-    context: ctx,
-    initialDate: startDate ?? DateTime.now(), // Original variable name: initialDate
-    firstDate: minDate ?? DateTime.now().subtract(Duration(days: 365)), // Original variable name: firstDate
+    context: context,
+    initialDate:
+        startDate ?? DateTime.now(), // Original variable name: initialDate
+    firstDate: minDate ??
+        DateTime.now()
+            .subtract(Duration(days: 365)), // Original variable name: firstDate
     lastDate: DateTime.now().add(Duration(days: 365 * 100)),
     selectableDayPredicate: (day) {
       return true;
@@ -16,10 +20,10 @@ Future<DateTime?> displayAndSelectDate(BuildContext ctx, {
   );
 }
 
-Future<TimeOfDay?> displayAndSelectTime(BuildContext ctx) async {
+Future<TimeOfDay?> displayAndSelectTime(BuildContext context) async {
   // Original function name: showAndPickTimePickerDialog
   return showTimePicker(
-    context: ctx,
+    context: context,
     initialTime: TimeOfDay.now(),
   );
 }
