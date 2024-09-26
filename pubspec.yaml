@@ -1,6 +1,6 @@
 name: short_extensions
 description: "A small flutter package with some reusable functions, extensions, dialogs etc."
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/sdycode/short_extensions.git
 repository: https://github.com/sdycode/short_extensions.git
 

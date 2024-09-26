@@ -1,4 +1,6 @@
 import 'dart:math';
+
+import 'package:short_extensions/short_extensions.dart';
  extension StringUtils on String {
   bool canBeParsedToDouble() {
     return double.tryParse(this) != null;
@@ -42,6 +44,19 @@ double convertStringToDouble(String value) {
   return 0;
 }
 
+extension NumUtils on num {
+  EdgeInsetsGeometry padAll() {
+    return EdgeInsets.all(this.toDouble());
+  }
+
+  EdgeInsetsGeometry padHorz() {
+    return EdgeInsets.symmetric(horizontal: this.toDouble());
+  }
+
+  EdgeInsetsGeometry padVert() {
+    return EdgeInsets.symmetric(vertical: this.toDouble());
+  }
+}
 extension IntUtils on int {
   int generateRandom() {
     return Random().nextInt(this);
