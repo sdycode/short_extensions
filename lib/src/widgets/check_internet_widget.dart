@@ -1,12 +1,12 @@
- import 'package:connectivity_plus/connectivity_plus.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:short_extensions/short_extensions.dart';
 
 Future<bool> internetAvaliable() async {
   ConnectivityResult res = (await Connectivity().checkConnectivity()).first;
-  if (res == ConnectivityResult.mobile || res == ConnectivityResult.wifi) {
-    return true;
-  } else {
+  if (res == ConnectivityResult.none) {
     return false;
+  } else {
+    return true;
   }
 }
 
@@ -63,12 +63,13 @@ class InternetStatusWidget extends StatelessWidget {
             return Center(
               child: Container(
                 width: double.infinity,
-                margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                margin:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                 padding: const EdgeInsets.all(12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                     color: Colors.white, borderRadius: 12.circularBorder()),
-                height:150,
+                height: 150,
                 child: TextWidget.black(
                   text: "Please check internet connection",
                   maxLines: 3,
