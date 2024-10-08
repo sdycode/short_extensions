@@ -255,8 +255,8 @@ extension WidgetEnhancer on Widget {
     );
   }
 
-  Widget applySymmetricPadding({double horizontal = 18, double vertical = 8}) {
-    // Widget symmetricPadding({double horz = 18, double vert = 8})
+  Widget applySymmetricPadding({double horizontal = 12, double vertical = 8}) {
+    // Widget symmetricPadding({double horz = 12, double vert = 8})
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: horizontal, vertical: vertical),
       child: this,
